@@ -1,0 +1,90 @@
+body {
+  background-color: saddlebrown;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+header {
+  height: 200px;
+  background-image: url(../slike/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header p {
+  padding-left: 80px;
+  margin-top: 10px;
+  padding-top: 20px;
+  font-size: 60px;
+  color: #0be35b;
+  font-family: Comic Sans MS;
+}
+
+.gumb {
+  display: inline-block;
+  color: #004000;
+  background-color: #09c339;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #004000;
+  border-radius: 10px;
+  font-size: 20px;
+  font-family: Comic Sans MS;
+  font-weight: bold;
+  padding: 0px 5px;
+}
+
+#drugi_gumb {
+  color: white;
+}
+
+.kocka {
+  width: 100px;
+  height: 100px;
+}
+.pravokotnik {
+  width: 200px;
+  height: 100px;
+}
+
+.rdeca {
+  background-color: #FF0000;
+}
+.zelena {
+  background-color: #00FF00;
+  border-style: solid;
+  border-width: 5px;
+  border-right: 0px;
+  border-left: 0px;
+  margin: 10px;
+  margin-left: 0px;
+}
+.modra {
+  background-color: #0000FF;
+}
+
+article {
+  position: relative;
+  height: 50%;
+  width: 100%;
+}
+
+#levi {
+  float: left;
+  height: 50%;
+  width: 45%;
+  padding: 10px;
+  text-align: justify;
+}
+
+#desni {
+  float: right;
+  height: 50%;
+  width: 50%;
+  padding: 10px;
+}
+
+#levi h2 {
+  color: #23AA22;
+}
