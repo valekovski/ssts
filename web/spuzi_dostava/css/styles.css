@@ -1,0 +1,124 @@
+body {
+    background-color: #C9C6DB;
+}
+
+header {
+    height: 200px;
+    background-image: url(../slike/burger_banner.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+header p {
+    margin: 0px;
+    padding-left: 80px;
+    color: #F0F727;
+    font-size: 80px;
+    font-family: Comic Sans MS;
+}
+
+header nav li {
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4F76D7;
+    border-radius: 10px;
+    background-color: #C9C6DB;
+    padding: 0px 4px;
+}
+header a {
+    color: #4F76D7;
+    text-decoration: none;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    font-weight: bold;
+}
+header a:hover {
+    color: #F0F727;
+}
+
+.gumb {
+    display: inline-block;
+    border-style: solid;
+    border-width: 2px;
+    border-color: #4F76D7;
+    border-radius: 10px;
+    background-color: #C9C6DB;
+    padding: 0px 4px;
+    color: #4F76D7;
+    text-decoration: none;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    font-weight: bold;
+}
+.gumb:hover {
+    color: #F0F727;
+}
+.gumb_active a {
+    color: #F0F727;
+}
+
+.clanek {
+    float: left;
+    width: 50%;
+    color: firebrick;
+    font-family: "Comic Sans MS", Verdana;
+    font-size: 18;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.clanek img {
+    padding: 10px;
+    height: 300px;
+    float: left;
+}
+
+footer {
+    position: absolute;
+    bottom: 0%;
+    left: 0px;
+    width: 80%;
+    color: firebrick;
+}
+footer img {
+    width: 40px;
+    float: left;
+}
+
+.menu {
+    color: firebrick;
+    font-family: Verdana;
+    padding: 10px;
+    padding-right: 20px;
+    text-align: justify;
+    border-style: solid;
+    border-width: 2px;
+    margin: 10px;
+}
+
+.menu:hover {
+    background-color: #A9A6CB;
+}
+
+.menu img {
+    padding: 10px;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.row {
+    width: 100%;
+    padding-right: 0px;
+}
+
+.narocilo {
+    color: firebrick;
+    font-family: "Comic Sans MS", Verdana;
+    font-size: 18;
+    margin: 10px;
+    padding: 10px;
+    border-style: solid;
+    border-width: 2px;
+}
