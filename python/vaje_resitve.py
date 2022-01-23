@@ -3,6 +3,9 @@
 #
 
 # 1. Vsi po pet
+# V trgovini "Vsi po pet" morajo stranke vedno kupiti natanko pet artiklov. Za blagajne zato
+# potrebujejo programsko opremo, ki uporabnika (blagajanika) vpraša po petih cenah. Ko jih le-ta
+# vnese, program izpiše vsoto.
 
 vsota = 0.0         # v tej spremenljivki bomo hranili akumulirano vrednost artiklov
 
@@ -28,6 +31,9 @@ print("Vsota: ", izdelek1 + izdelek2 + izdelek3 + izdelek4 + izdelek5)
 
 
 # 2. Konkurenca
+# Konkurenca ne spi. Trgovina za vogalom se je odločila za posebno ponudbo: kupec lahko kupi toliko
+# izdelkov, kolikor želi. Napišite program, ki blagajnika vpraša, koliko izdelkov je v košarici, nato
+# pa vpraša po cenah teh izdelkov in na koncu izpiše vsoto.
 
 # Če smo program načrtovali premišljeno že v 1. nalogi, potem lahko z malenkostnimi spremembami
 # ustrezno popravimo program še za to nalogo. Dodamo spremenljivko st_izdelkov, jo preberemo in
@@ -47,6 +53,10 @@ print("Vsota: ", vsota)
 
 
 # 3. Top-shop
+# Modro vodstvo tretje trgovine za drugim vogalom je analiziralo poslovanje druge trgovine in odkrilo,
+# da ima dolge vrste na blagajnah, to pa zato, ker morajo blagajniki prešteti izdelke, preden lahko začnejo
+# vnašati njihove cene. Zase je naročilo nov program, ki ne vpraša po številu izdelkov, temveč sprašuje po
+# cenah toliko časa, dokler blagajnik ne vnese ničle.
 
 # Uporabimo lahko rešitev iz prve naloge. Dodati moramo zgolj en pogojni stavek, ki nam bo povedal,
 # kdaj moramo izstopiti iz zanke. Ker ne vemo točnega števila ponovitev zanke (saj je odvisno od
@@ -70,6 +80,9 @@ print("Vsota: ", vsota)
 #
 
 # 1. Državna agencija za varstvo potrošnikov
+# Če nadaljujemo zgodbo od včeraj, se je zaradi poplave sumljivih trgovin za vogali vmešala Državna
+# agencija za varstvo potrošnikov, ki se je odločila nadzorovati poprečne cene izdelkov v košaricah
+# strank. Popravi zadnji ali predzadnji program tako, da bo izpisal tudi povprečno ceno. 
 
 # Uporabimo lahko rešitev iz zadnje naloge. Če želimo izračunati povprečno ceno, moramo nekako
 # beležiti tudi število izdelkov (povrečje = vsota/st_izdelkov). V predzadnji nalogi to že počnemo,
@@ -88,6 +101,7 @@ print("Povprečna cena: ", vsota/st_izdelkov)
 
 
 # 2. Ajavost nizov
+# Napiši program, ki mu uporabnik vpiše niz in pove, koliko črk a je v njem. 
 
 niz = input("Vnesite besedilo: ")
 
@@ -95,6 +109,7 @@ print("Število a-jev v vnešenem besedilu je: ", niz.count("a"))
 
 
 # 3. Delitelji števil
+# Napiši program, ki izpiše vse delitelje podanega števila. 
 
 # Naivni algoritem za vsako število med 1 in vnešenim številom preverja, če je vnešeno število z njim
 # deljivo. Kako vemo, če je neko število deljivo z drugim?
@@ -108,6 +123,7 @@ for i in range(stevilo):
 
 
 # 4. Praštevilo
+# Napiši program, ki za podano število pove, ali je praštevilo.
 
 # Kdaj rečemo številu, da je praštevilo? Ko je deljivo samo z 1 in s samim seboj. Uporabimo lahko prejšnji
 # program. Beležiti moramo, če je bilo število deljivo s katerimkoli številom, ki ni 1 ali število samo.
@@ -154,6 +170,9 @@ else:
 #
 
 # 1. Fibonaccijevo zaporedje
+# Fibonaccijevo zaporedje se začne s številoma 1, 1, vsak naslednji člen pa dobimo tako, da seštejemo prejšnja dva.
+# 1 in 1 je 2, 1 in 2 je 3, 2 in 3 je 5, 3 in 5 je 8 in tako naprej. Zaporedje se tako začne z 1 1 2 3 5 8 13 21 34 55.
+# Napišite program, ki izračuna in izpiše prvih 20 členov zaporedja.
 
 st_clenov = 20            # št. členov zaporedja, ki jih bomo generirali
 predzadnji_clen = 1       # inicializiramo začetna dva člena
@@ -173,6 +192,10 @@ for i in range(st_clenov - 2):
 
 
 # 2. Tekmovanje iz poštevanke
+# Sestavite program za tekmovanje iz poštevanke, ki poteka takole. Dva tekmovalca si zastavljata račune tako, da eden vpiše dva
+# faktorja, drugi mora povedati produkt. Nato se zamenjata. Tekmovalec dobi točko, če ugane pravilni zmnožek. Po vsakem krogu
+# program izpiše trenutni rezultat. Igre je konec, ko eden od tekmovalcev vodi za več kot dve točki. Program mu mora primerno
+# čestitati, drugemu pa povedati, kar mu gre. 
 
 tekmovalec1_tocke = 0
 tekmovalec2_tocke = 0
@@ -215,6 +238,8 @@ else:
 #
 
 # 1. Števke
+# Napišite program, ki prebere vhodno naravno število in ga razcepi na posamezne cifre ter te cifre izpiše. Pričnite z enicami,
+# nadaljujte z deseticami, stoticami, tisočicami, itn.
 
 # število lahko na števke razcepimo tako, da ga delimo z 10 in preverimo ostanek,
 # nato ta ostanek odbijemo in postopek ponovimo, dokler nismo števila zdelili do konca
@@ -230,6 +255,8 @@ while (vhodno_st > 0):
 
 
 # 2. Operacija deljenja
+# Napišite program, ki izvede celoštevilsko deljenje dveh vhodnih naravnih števil M in N, in sicer samo z odštevanjem – brez uporabe
+# naprej definirane operacije deljenja.
 
 # drugo število odštevamo od prvega toliko časa, dokler prvo ni manjše od drugega
 # pri tem štejemo, kolikokrat smo drugega že odšteli od prvega
@@ -250,6 +277,7 @@ print(M, "/", N, " = ", rezultat, ", ost. ", prvo_st)
 
 
 # 3. Soda števila od 1 do 100
+# Napišite program, ki izpiše vsoto sodih števil med 1 in 100. (Namig: rezultat je 2550)
 
 vsota_sodih = 0
 
@@ -263,6 +291,8 @@ print("Rezultat: ", vsota_sodih)
 
 
 # 4. Najmanjša vrednost, razen 0
+# Napišite program, ki toliko časa prebira vrednosti, ki jih vnaša uporabnik, dokler ne vnese vrednosti 0. Ko jo uporabnik vnese, naj algoritem
+# izpiše najmanjšo vrednost. Bodite pozorni, saj algoritem ne sme upoštevati števila 0 kot najmanjšega števila.
 
 min_st = int(input("Vnesite število: "))        # v tej spremenljivki bomo hranili naše najmanjše število
 trenutno_st = min_st
