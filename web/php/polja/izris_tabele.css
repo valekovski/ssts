@@ -1,0 +1,15 @@
+.kvadratek {
+  width: 30pt;
+  height: 30pt;
+  display: inline-block;
+  margin-right: 5pt;
+  border: 1pt solid black;
+}
+
+.bel {
+  background-color: white;
+}
+
+.crn {
+  background-color: black;
+}

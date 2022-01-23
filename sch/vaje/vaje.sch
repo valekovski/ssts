@@ -1,0 +1,134 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L MCU_Module:Arduino_UNO_R2 A1
+U 1 1 6081B701
+P 7500 2350
+F 0 "A1" H 8350 2350 50  0000 C CNN
+F 1 "Arduino_UNO_R2" H 8350 2450 50  0000 C CNN
+F 2 "Module:Arduino_UNO_R2" H 7500 2350 50  0001 C CIN
+F 3 "https://www.arduino.cc/en/Main/arduinoBoardUno" H 7500 2350 50  0001 C CNN
+	1    7500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 608234FD
+P 5600 1900
+F 0 "R1" H 5670 1946 50  0000 L CNN
+F 1 "R" H 5670 1855 50  0000 L CNN
+F 2 "" V 5530 1900 50  0001 C CNN
+F 3 "~" H 5600 1900 50  0001 C CNN
+	1    5600 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 1350 7700 1050
+Wire Wire Line
+	7700 1050 5600 1050
+Wire Wire Line
+	7500 3850 7500 3450
+$Comp
+L Switch:SW_SPST SW1
+U 1 1 6082260D
+P 5600 2600
+F 0 "SW1" V 5646 2512 50  0000 R CNN
+F 1 "SW_SPST" V 5555 2512 50  0000 R CNN
+F 2 "" H 5600 2600 50  0001 C CNN
+F 3 "~" H 5600 2600 50  0001 C CNN
+	1    5600 2600
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 2250 5600 2250
+Wire Wire Line
+	5600 2250 5600 2050
+Wire Wire Line
+	5600 2800 5600 3850
+$Comp
+L Device:R R3
+U 1 1 609C423C
+P 6250 2650
+F 0 "R3" H 6320 2696 50  0000 L CNN
+F 1 "R" H 6320 2605 50  0000 L CNN
+F 2 "" V 6180 2650 50  0001 C CNN
+F 3 "~" H 6250 2650 50  0001 C CNN
+	1    6250 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 609C4498
+P 6550 2750
+F 0 "R4" H 6620 2796 50  0000 L CNN
+F 1 "R" H 6620 2705 50  0000 L CNN
+F 2 "" V 6480 2750 50  0001 C CNN
+F 3 "~" H 6550 2750 50  0001 C CNN
+	1    6550 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:LED D2
+U 1 1 609C546F
+P 6250 3200
+F 0 "D2" V 6289 3083 50  0000 R CNN
+F 1 "LED" V 6198 3083 50  0000 R CNN
+F 2 "" H 6250 3200 50  0001 C CNN
+F 3 "~" H 6250 3200 50  0001 C CNN
+	1    6250 3200
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:LED D3
+U 1 1 609C5988
+P 6550 3350
+F 0 "D3" V 6589 3233 50  0000 R CNN
+F 1 "LED" V 6498 3233 50  0000 R CNN
+F 2 "" H 6550 3350 50  0001 C CNN
+F 3 "~" H 6550 3350 50  0001 C CNN
+	1    6550 3350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7000 2450 6250 2450
+Wire Wire Line
+	6250 2450 6250 2500
+Wire Wire Line
+	6250 2800 6250 3050
+Wire Wire Line
+	6250 3350 6250 3850
+Connection ~ 6250 3850
+Wire Wire Line
+	6250 3850 6550 3850
+Wire Wire Line
+	6550 3500 6550 3850
+Connection ~ 6550 3850
+Wire Wire Line
+	6550 3850 7500 3850
+Wire Wire Line
+	6550 2900 6550 3200
+Wire Wire Line
+	6550 2600 6550 2550
+Wire Wire Line
+	6550 2550 7000 2550
+Wire Wire Line
+	5600 2400 5600 2250
+Connection ~ 5600 2250
+Wire Wire Line
+	5600 1050 5600 1750
+Wire Wire Line
+	5600 3850 6250 3850
+$EndSCHEMATC
